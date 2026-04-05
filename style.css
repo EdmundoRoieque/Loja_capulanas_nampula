@@ -1,0 +1,72 @@
+/* Configurações Gerais */
+* { margin: 0; padding: 0; box-box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #f4f4f4; }
+
+/* Cabeçalho */
+header { 
+    background-color: #b33939; 
+    padding: 15px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header h1 { color: white; font-size: 1.2rem; text-transform: uppercase; }
+.btn-encomendar-topo { 
+    background-color: #2ed573; 
+    color: white; 
+    padding: 8px 15px; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+/* Vitrine de Produtos */
+.vitrine { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); 
+    gap: 15px; 
+    padding: 15px; 
+}
+
+/* Card do Produto */
+.produto-card { 
+    background: white; 
+    border-radius: 8px; 
+    overflow: hidden; 
+    position: relative; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.produto-card img { width: 100%; height: 200px; object-fit: cover; }
+
+/* Selos */
+.selo { 
+    position: absolute; top: 10px; left: 10px; 
+    padding: 3px 10px; border-radius: 20px; 
+    font-size: 0.7rem; font-weight: bold; color: white;
+}
+.selo-promo { background: #ff4757; }
+.selo-novo { background: #ffa502; }
+
+/* Texto e Preços */
+.info { padding: 10px; }
+.info h3 { font-size: 0.9rem; color: #333; margin-bottom: 5px; height: 40px; }
+.precos { margin-bottom: 10px; }
+.preco-antigo { text-decoration: line-through; color: #999; font-size: 0.8rem; margin-right: 5px; }
+.preco-atual { color: #222; font-weight: bold; font-size: 1.1rem; }
+
+/* Botão WhatsApp */
+.btn-whats-card { 
+    display: block; 
+    background-color: #2ed573; 
+    color: white; 
+    padding: 10px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+    font-size: 0.9rem;
+}
+footer { text-align: center; padding: 20px; color: #666; font-size: 0.8rem; }
