@@ -39,7 +39,8 @@ function renderizarProdutos() {
         conteudo += `
             <div class="produto-card">
                 ${seloHTML}
-                <img src="imagem/${p.id}.jpg" alt="${p.nome}">
+                <img src="${p.id.startsWith('http') ? p.id : p.id + '.jpg'}" alt="${p.nome}">
+
                 <div class="info">
                     <h3>${p.nome}</h3>
                     <div class="precos">
